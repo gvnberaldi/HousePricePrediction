@@ -1,8 +1,8 @@
 MSSubClass: Identifies the type of dwelling involved in the sale.	
 
-        20	1-STORY 1946 & NEWER ALL STYLES
+        20	1-STORY 1946 & NEWER ALL STYLES -> un piano costr
         30	1-STORY 1945 & OLDER
-        40	1-STORY W/FINISHED ATTIC ALL AGES
+        40	1-STORY W/FINISHED ATTIC ALL AGES ->  un piano con attico abitabile tutte l'età
         45	1-1/2 STORY - UNFINISHED ALL AGES
         50	1-1/2 STORY FINISHED ALL AGES
         60	2-STORY 1946 & NEWER
