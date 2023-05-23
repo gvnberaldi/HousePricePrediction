@@ -1,0 +1,5 @@
+nel pdf solo gli attributi interessanti e solo i grafici relativi ad essi
+Tabella per la descrizione degli attributi (possibilmente doppia per occupare meno spazio)
+
+SI suole raggruppare le catergorie con pochi elementi in una singola categoria other oppure in bin.
+Fornire una funzione che prende i dati in input e li trasforma per essere adattati al test set
