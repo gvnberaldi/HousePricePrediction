@@ -1,0 +1,39 @@
+Aggiunte due funzioni e modificato histplot
+1- LotArea è buono
+2- Street va buttato, troppi pochi elementi per Grvl e tutti per Pavel
+3- Alley va buttato per lo stesso motivo di Street
+4- LotShape da verificare con hypothesis testing, aggregare IR2 e IR3 ?
+5- LandContour maybe not enough values for a good model, we do not know if they are enough
+6- Utilities: utile? sicuramente! Tuttavia tutto il training set ha tutti i servizi, da BUTTARE
+7- LotConfig: Stessa distribuzione, pochi elementi!
+8- LandSlope: troppi pochi campioni per gli altri valori, droppare!
+9- Neighborhood: inserire other? Sembra buono -> da tenere
+10- Condition1: 90% dei campioni afferiscono a un solo valore
+11- Condition2: da buttare
+12- BldgType: Binarization? 
+13- HouseStyle: statistic test? si può tenere, ma di sicuro va aggregato qualcosa (guarda 1story vs 2story per capire)...
+14- OverallQual: we believe that is significant! we can keep it as it is
+15- OverallCond: it seems to be not useful, although its meaning can be relevant
+16- YearBuilt: we can see that the more recent, the higher the price
+17- YearRemodAdd: we can see that the more recent the remodeling of the house, the higher the value. We can keep this value
+18- RoofStyle: to test, maybe we can keep it
+19- RoofMatl: da buttare, tutti su un valore
+20- Exterior1st: correlato a exterior2nd, possiamo tenere questo, cement sembra avere buone chance di essere usato, anche se ci sono molte categorie con pochi elementi
+21- Exterior2nd: correlato a exterior1st, possiamo tenere exterior1st
+22- MasVnrType: we should change Na to None because it is the most frequent class
+23- MasVnrArea: we changed to numeric, we replaced the Na with 0 (temporarirly) -> Is Interaction MasVnrType- MasVnrAre relevant???? Split in 3 categories??? It depends on the interaction!!!
+24- ExterQual: we can keep it as it is, however Poor is absent
+25- ExterCond: very few data for all the classes, two of them contains them. These two have the same distribution, we can avoid it
+26- Foundation: buono, da tenere, ma da accorpare wood, slab and stone
+27- BsmtQual: buonissimo, da tenere
+28- BsmtCond: da buttare
+29- BsmtExposure: keep it as it is
+30- BsmtFinType1: keep it as it is, vedere la correlazione fra questo e quello numerico BsmtFinSF1
+31- BsmtFinSF1: correalto con BsmtFinType1
+32- BsmtFinType2: cestinare
+33- BsmtFinSF2: cestinare
+34- BsmtUnfSF: borderline cestinare
+35- TotalBsmtFs: teniamolo così com'è
+36- Heating: cestiniamolo, tutti gli stessi
+37- HeatingQC: teniamolo, ma bisogna gestire poor?
+

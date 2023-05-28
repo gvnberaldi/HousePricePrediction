@@ -1,3 +1,49 @@
+Aggiunte due funzioni e modificato histplot
+
+0- ID : removed
+1- MSSubClass: controllare correlazione anno 
+    - to category
+2- MSZoning: to remove
+    - to category
+4- LotArea è buono
+    - to int
+5- Street va buttato, troppi pochi elementi per Grvl e tutti per Pavel
+    
+6- Alley va buttato per lo stesso motivo di Street
+7- LotShape da verificare con hypothesis testing, aggregare IR2 e IR3 ?
+8- LandContour maybe not enough values for a good model, we do not know if they are enough
+9- Utilities: utile? sicuramente! Tuttavia tutto il training set ha tutti i servizi, da BUTTARE
+10- LotConfig: Stessa distribuzione, pochi elementi!
+11- LandSlope: troppi pochi campioni per gli altri valori, droppare!
+12- Neighborhood: inserire other? Sembra buono -> da tenere
+13- Condition1: 90% dei campioni afferiscono a un solo valore
+14- Condition2: da buttare
+15- BldgType: Binarization? 
+16- HouseStyle: statistic test? si può tenere, ma di sicuro va aggregato qualcosa (guarda 1story vs 2story per capire)...
+17- OverallQual: we believe that is significant! we can keep it as it is
+18- OverallCond: it seems to be not useful, although its meaning can be relevant
+19- YearBuilt: we can see that the more recent, the higher the price
+20- YearRemodAdd: we can see that the more recent the remodeling of the house, the higher the value. We can keep this value
+21- RoofStyle: to test, maybe we can keep it
+22- RoofMatl: da buttare, tutti su un valore
+23- Exterior1st: correlato a exterior2nd, possiamo tenere questo, cement sembra avere buone chance di essere usato, anche se ci sono molte categorie con pochi elementi
+24- Exterior2nd: correlato a exterior1st, possiamo tenere exterior1st
+25- MasVnrType: we should change Na to None because it is the most frequent class
+26- MasVnrArea: we changed to numeric, we replaced the Na with 0 (temporarirly) -> Is Interaction MasVnrType- MasVnrAre relevant???? Split in 3 categories??? It depends on the interaction!!!
+27- ExterQual: we can keep it as it is, however Poor is absent
+28- ExterCond: very few data for all the classes, two of them contains them. These two have the same distribution, we can avoid it
+29- Foundation: buono, da tenere, ma da accorpare wood, slab and stone
+30- BsmtQual: buonissimo, da tenere
+31- BsmtCond: da buttare
+32- BsmtExposure: keep it as it is
+33- BsmtFinType1: keep it as it is, vedere la correlazione fra questo e quello numerico BsmtFinSF1
+34- BsmtFinSF1: correalto con BsmtFinType1
+35- BsmtFinType2: cestinare
+36- BsmtFinSF2: cestinare
+37- BsmtUnfSF: borderline cestinare
+38- TotalBsmtFs: teniamolo così com'è
+39- Heating: cestiniamolo, tutti gli stessi
+40- HeatingQC: teniamolo, ma bisogna gestire poor?
 41-CentralAir: remove, dependent with YearBuilt which is more indicative
 42-Electrical: remove, low variance between groups
 43-1stFlrSF: indicativo, high variance medium (merge TotalFeet?!)
