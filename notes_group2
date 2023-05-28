@@ -26,6 +26,43 @@
     - to int64, remove NA value (we assume no garage)
 60-GarageFinish: good predictor for HIGH and LOW
     - to category
-
+61-GarageCars: good predictor, 0,1 -> LOW , 2 -> medium , 3 -> HIGH/medium
+    - to category ordinal 
+62-GarageArea: very gooood !!!!!! , see correlation with GarageCars, we saw ;)
+    - to int
+63-GarageQual: not so good, low variability
+    - to category
+64-GarageCond: the same of GarageQual
+    - to category
+65-PavedDrive: not discriminant attribute, blaaa
+    - to category
+66-WoodDeckSF: not a good attribute
+    - to int
+67-OpenPorchSF: not so good 
+    - to int
+68-EnclosedPorch: discard
+    - to int
+69-3SsnPorch: same of EnclosedPorch
+    - to int
+70-ScreenPorch: same of EnclosedPorch
+    - to int
+71-PoolArea: too low instances with pool, discard
+    - to int
+72-PoolQC: too NA, low variability, discard
+    - to category
+73-Fence: low variability :((((
+    - to category
+74-MiscFeature: low variability !!!! che schifo
+    - to category
+75-MiscVal: low variability, again
+    - to int
+76-MoSold: high variability, p-value very high
+    - to categorical ordinal
+77-YrSold: ohhhhh p-value high ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^, discard !
+    - to int
+78-SaleType: low variability
+    - to category
+79-SaleCondition: na merda
+    - to category
 
 TODO: scrivere conversione tipi
