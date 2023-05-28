@@ -1,2 +1,31 @@
-TODO  
-    Abbiamo traformato in int nella data understanding  mettendo uguale alla media: LotFrontage,1stFlrSF
+41-CentralAir: remove, dependent with YearBuilt which is more indicative
+42-Electrical: remove, low variance between groups
+43-1stFlrSF: indicativo, high variance medium (merge TotalFeet?!)
+44-2ndFlrSF: possible categorization
+    - no 2nd floor
+    - 2nd floor small
+    - 2nd floor big
+45-LowQualFinSF: remove - statistic test high p-value
+46-GrLivArea: highly dependent, almost like TotalFeet?! (above ground only)
+47-BsmtFullBath: not indicative, =3 one instance only, when =2/3 not discriminant, when =0 medium/low
+                 in case, convert from int to object and the from object to category
+48-BsmtHalfBath: stattest hight p-value, discard it
+49-FullBath: good prediction value, high IG
+50-HalfBath: IG not too high, possibly removed, not so good prediction value
+51-BedroomAbvGr (aka Bedroom): less indicative, IG low, candidate to remove
+52-KitchenAbvGr (aka Kitchen): low variance, only when =1 we have high price
+53-KitchenQual: high IG, possible binarization: Gd, Ex, Fa+TA+Po
+54-TotRmsAbvGrd: linear trend w.r.t price (correlation with Bedrooms or merge with totalRooms)
+55-Functional: low variability, low prediction value, remove it, p-value=0.03
+56-Fireplaces: good discriminant bit not so indicative, maybe binarization to Yes/No
+57-FireplaceQu: to remove (Fireplaces says the same)
+58-GarageType: possible categorization, good prediction value
+59-GarageYrBlt: (YearBuilt?!) strong correlation with YearBuilt, 
+    - conversion from object to int64
+    - instances with zero value removed
+    - to int64, remove NA value (we assume no garage)
+60-GarageFinish: good predictor for HIGH and LOW
+    - to category
+
+
+TODO: scrivere conversione tipi
