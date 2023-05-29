@@ -1,1 +1,4 @@
 1- Maybe using prepruning with a threshold or post-pruning(TTS,VS,TS) ( DTS )
+2- Discretize a variable we can use the information gain to determine the split point of n points, maybe it is useless
+3- Using a rule-based classifier
+4- 
