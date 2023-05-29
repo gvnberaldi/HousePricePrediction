@@ -1,0 +1,27 @@
+
+1- MSSubClass: to see
+1- LotArea: it is good, maybe binarization ? 
+2- Neighborhood: to see, surely to aggregate in some categories
+3- HouseStyle: too see, surely to aggregate in some categories
+4- OverallQual: we believe that is significant! we can keep it as it is
+5- YearBuilt: we can see that the more recent, the higher the price
+6- YearRemodAdd: we can see that the more recent the remodeling of the house, the higher the value. We can keep this value, correlation con YearBuilt
+7- Exterior1st: to see 
+8- MasVnrType: to see correlation, we should change Na to None because it is the most frequent class (possibly add correlation with area)
+    - to category
+9- MasVnrArea: to see correlation, we changed to numeric, we replaced the Na with 0 (temporarirly) -> Is Interaction MasVnrType- MasVnrAre relevant???? Split in 3 categories??? It depends on the interaction!!!
+10- ExterQual: to see, we can keep it as it is, however Poor is absent
+11- Foundation: to see, maybe aggregation
+12- BsmtQual: very good, aggregate NA+FA+ΤA
+13- BsmtFinType1: too see, catch high but with MEDIUM 
+14- TotalBsmtFs: too see
+15- 1stFlrSF: indicative, high variance medium (merge TotalFeet?!)
+16- 2ndFlrSF: possible categorization
+17- GrLivArea: highly dependent, almost like TotalFeet?! (above ground only)
+18- FullBath: good prediction value, high IG
+19- KitchenQual: high IG, possible binarization, Gd, Ex, Fa+TA+Po
+20- TotRmsAbvGrd: to see, linear trend w.r.t price (correlation with Bedrooms or merge with totalRooms)
+21- Fireplaces: to see, good discriminant bit not so indicative, maybe binarization to Yes/No
+22- GarageType: possible categorization, good prediction value
+23- GarageFinish: good predictor for HIGH and LOW
+24- GarageArea: very gooood !!!!!! , see correlation with GarageCars, we saw ;) 

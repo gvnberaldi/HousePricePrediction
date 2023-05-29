@@ -1,0 +1,167 @@
+Aggiunte due funzioni e modificato histplot
+
+0- ID : removed
+1- MSSubClass: controllare correlazione anno 
+    - to category
+2- MSZoning: to remove
+    - to category
+4- LotArea: è buono
+    - to int
+5- Street: va buttato, troppi pochi elementi per Grvl e tutti per Pavel
+    - to category
+6- Alley: va buttato per lo stesso motivo di Street
+    - to category
+7- LotShape: removed
+    - to category
+8- LandContour: removed
+    - to category
+9- Utilities: utile? sicuramente! Tuttavia tutto il training set ha tutti i servizi, da BUTTARE
+    - to category
+10- LotConfig: Stessa distribuzione, pochi elementi!
+    - to category
+11- LandSlope: troppi pochi campioni per gli altri valori, droppare!
+    - to category
+12- Neighborhood: inserire other? Sembra buono -> da tenere
+    - to category
+13- Condition1: 90% dei campioni afferiscono a un solo valore
+    - to category
+14- Condition2: da buttare
+    - to category
+15- BldgType:  dropped 
+    - to category
+16- HouseStyle: statistic test? si può tenere, ma di sicuro va aggregato qualcosa (guarda 1story vs 2story per capire)...
+    - to category
+17- OverallQual: we believe that is significant! we can keep it as it is
+    - category ordinal
+18- OverallCond: it seems to be not useful, although its meaning can be relevant
+    - category ordinal
+19- YearBuilt: we can see that the more recent, the higher the price
+    - to int
+20- YearRemodAdd: we can see that the more recent the remodeling of the house, the higher the value. We can keep this value
+    - to int
+21- RoofStyle: to remove(tested)
+    - to category
+22- RoofMatl: da buttare, tutti su un valore
+    - to category
+23- Exterior1st: correlato a exterior2nd (Fatto test, correlazione max), possiamo tenere questo, cement sembra avere buone chance di essere usato, anche se ci sono molte categorie con pochi elementi
+    - to category
+24- Exterior2nd: correlato a exterior1st(Fatto test, correlazione max), possiamo tenere exterior1st
+    - to category
+25- MasVnrType: we should change Na to None because it is the most frequent class (possibly add correlation with area)
+    - to category
+26- MasVnrArea: we changed to numeric, we replaced the Na with 0 (temporarirly) -> Is Interaction MasVnrType- MasVnrAre relevant???? Split in 3 categories??? It depends on the interaction!!!
+    - to int
+27- ExterQual: we can keep it as it is, however Poor is absent
+    - to category
+28- ExterCond: Drop it. very few data for all the classes, two of them contains them. These two have the same distribution, we can avoid it
+    - to category
+29- Foundation: buono, da tenere, ma da accorpare wood, slab and stone
+    - to category
+30- BsmtQual: buonissimo, da tenere
+    - to category
+31- BsmtCond: da buttare
+    - to category
+32- BsmtExposure: drop (tested)
+    - to category
+33- BsmtFinType1: Review the test ad decide. Vedere la correlazione fra questo e quello numerico BsmtFinSF1
+    - to category
+34- BsmtFinSF1: correlation con BsmtFinType1
+    - to int
+35- BsmtFinType2: cestinare
+    - to category
+36- BsmtFinSF2: cestinare
+    - to int
+37- BsmtUnfSF: borderline cestinare
+    - to int
+38- TotalBsmtFs: teniamolo così com'è
+    - to int
+39- Heating: cestiniamolo, tutti gli stessi
+    - to category
+40- HeatingQC: Borderline, tested. Bisogna gestire poor?
+    - to category
+41-CentralAir: remove, dependent with YearBuilt which is more indicative
+    - to category
+42-Electrical: remove, low variance between groups
+    - to category
+43-1stFlrSF: indicativo, high variance medium (merge TotalFeet?!)
+    - to int64
+44-2ndFlrSF: possible categorization
+    - to int64
+    - no 2nd floor
+    - 2nd floor small
+    - 2nd floor big
+45-LowQualFinSF: remove - statistic test high p-value
+    - to int64
+46-GrLivArea: highly dependent, almost like TotalFeet?! (above ground only)
+    - to int64
+47-BsmtFullBath: not indicative, =3 one instance only, when =2/3 not discriminant, when =0 medium/low
+                 in case, convert from int to object and the from object to category
+    - to categoric ordinal
+48-BsmtHalfBath: stattest high p-value, discard it
+    - to categoric ordinal
+49-FullBath: good prediction value, high IG
+    - to categoric ordinal
+50-HalfBath: IG not too high, possibly removed, not so good prediction value
+    - to categoric ordinal
+51-BedroomAbvGr (aka Bedroom): less indicative, IG low, candidate to remove
+    - to categoric ordinal
+52-KitchenAbvGr (aka Kitchen): low variance, only when =1 we have high price
+    - to categoric ordinal
+53-KitchenQual: high IG, possible binarization, Gd, Ex, Fa+TA+Po
+    - to category (ordinal?)
+54-TotRmsAbvGrd: linear trend w.r.t price (correlation with Bedrooms or merge with totalRooms)
+    - to int64
+55-Functional: low variability, low prediction value, remove it, p-value=0.03
+    - to category
+56-Fireplaces: good discriminant bit not so indicative, maybe binarization to Yes/No
+    - to categoric ordinal
+57-FireplaceQu: to remove (Fireplaces says the same)
+    - to category (ordinal?)
+58-GarageType: possible categorization, good prediction value
+    - to category
+59-GarageYrBlt: (YearBuilt?!) strong correlation with YearBuilt, 
+    - conversion from object to int64
+    - instances with zero value removed
+    - to int64, remove NA value (we assume no garage)
+60-GarageFinish: good predictor for HIGH and LOW
+    - to category
+61-GarageCars: good predictor, 0,1 -> LOW , 2 -> medium , 3 -> HIGH/medium
+    - to category ordinal 
+62-GarageArea: very gooood !!!!!! , see correlation with GarageCars, we saw ;)
+    - to int
+63-GarageQual: not so good, low variability
+    - to category
+64-GarageCond: the same of GarageQual
+    - to category
+65-PavedDrive: not discriminant attribute, blaaa
+    - to category
+66-WoodDeckSF: not a good attribute
+    - to int
+67-OpenPorchSF: not so good 
+    - to int
+68-EnclosedPorch: discard
+    - to int
+69-3SsnPorch: same of EnclosedPorch
+    - to int
+70-ScreenPorch: same of EnclosedPorch
+    - to int
+71-PoolArea: too low instances with pool, discard
+    - to int
+72-PoolQC: too NA, low variability, discard
+    - to category
+73-Fence: low variability :((((
+    - to category
+74-MiscFeature: low variability !!!! che schifo
+    - to category
+75-MiscVal: low variability, again
+    - to int
+76-MoSold: high variability, p-value very high
+    - to categorical ordinal
+77-YrSold: ohhhhh p-value high ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^, discard !
+    - to int
+78-SaleType: low variability
+    - to category
+79-SaleCondition: na merda
+    - to category
+
+
