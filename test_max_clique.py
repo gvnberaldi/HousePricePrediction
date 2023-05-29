@@ -41,12 +41,8 @@ def function_maximal_clique(graph: list[list], n: int) -> list[list[int]]:
     i = n - 1
     while( maximal_clique[0] < len(graph) - n + 1):
 
-        if i == len(maximal_clique) - 1 and decide_maximal_clique(graph=graph, set_nodes=maximal_clique):
+        if i == n - 1 and decide_maximal_clique(graph=graph, set_nodes=maximal_clique):
              res.append(maximal_clique.copy())
-        
-        # if i == n - 1:
-        #     print(maximal_clique)
-        
         
         maximal_clique[i] += 1
         if maximal_clique[i] < (len(graph) - n + 1 + i):
@@ -75,14 +71,6 @@ def function_maximal_clique_all(graph: list[list]) -> list[list[int]]:
     return res
         
         
-
-
-
-
-
-
-
-
 
 graph = [ [ 0 for _ in range(7) ] for _ in range(7)  ]
 
