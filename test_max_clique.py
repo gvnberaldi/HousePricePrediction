@@ -29,7 +29,7 @@ def decide_maximal_clique(graph: list[list] , set_nodes : list[int]):
     return True
 
 
-def function_maximal_clique(graph: list[list], n: int) -> list[list[int]]:
+def function_maximal_cliques(graph: list[list], n: int) -> list[list[int]]:
     
     if(len(graph) < n or n <= 0):
         return None 
@@ -57,13 +57,14 @@ def function_maximal_clique(graph: list[list], n: int) -> list[list[int]]:
     return res
         
 
-def function_maximal_clique_all(graph: list[list]) -> list[list[int]]:
+def function_maximal_cliques_all(graph: list[list]) -> list[list[int]]:
     
     n = len(graph)
 
     res = []
     while n > 0 :
-        resi = function_maximal_clique(graph=graph, n=n)
+        resi = function_maximal_cliques(graph=graph, n=n)
+
         n -= 1
         if(resi != []):
             res.append(resi)
@@ -96,7 +97,7 @@ for row in graph:
 
 print("-"*100)
 
-maximal_cliques = function_maximal_clique_all(graph=graph)
+maximal_cliques = function_maximal_cliques_all(graph=graph)
 
 for clique in maximal_cliques:
     print(clique)
