@@ -1,0 +1,126 @@
+Pair 0 : MasVnrType<->MasVnrArea -> 0.8918939304620889
+Pair 1 : GrLivArea<->TotRmsAbvGrd -> 0.8254893743088356
+Pair 2 : TotalBsmtSF<->1stFlrSF -> 0.8195299750050345
+Pair 3 : 2ndFlrSF<->GrLivArea -> 0.6875010641666
+Pair 4 : GarageType<->GarageFinish -> 0.6872189796273703
+Pair 5 : MSSubClass<->HouseStyle -> 0.6815815663184105
+Pair 6 : GrLivArea<->FullBath -> 0.6300116462511144
+Pair 7 : 2ndFlrSF<->TotRmsAbvGrd -> 0.6164226354915345
+Pair 8 : OverallQual<->MasVnrArea -> 0.6115855912304079
+Pair 9 : OverallQual<->GrLivArea -> 0.5930074300286508
+Pair 10 : MasVnrArea<->FullBath -> 0.5928764259205855
+Pair 11 : YearBuilt<->YearRemodAdd -> 0.5928549763436506
+Pair 12 : BsmtQual<->BsmtFinType1 -> 0.5793810965697551
+Pair 13 : MasVnrArea<->ExterQual -> 0.5762207399656584
+Pair 14 : OverallQual<->YearBuilt -> 0.572322768962362
+Pair 15 : 1stFlrSF<->GrLivArea -> 0.5660239689357488
+Pair 16 : OverallQual<->GarageArea -> 0.5620217566126073
+Pair 17 : OverallQual<->ExterQual -> 0.5607593519180496
+Pair 18 : FullBath<->TotRmsAbvGrd -> 0.5547842535334786
+Pair 19 : OverallQual<->YearRemodAdd -> 0.5506839241941732
+Pair 20 : OverallQual<->FullBath -> 0.5505997093682541
+Pair 21 : ExterQual<->KitchenQual -> 0.5473579787253363
+Pair 22 : MasVnrArea<->TotRmsAbvGrd -> 0.5442026331868921
+Pair 23 : OverallQual<->TotalBsmtSF -> 0.5378084986123918
+Pair 24 : MasVnrArea<->Fireplaces -> 0.5377739519628402
+Pair 25 : Foundation<->BsmtQual -> 0.5338690380695025
+Pair 26 : Neighborhood<->YearBuilt -> 0.5177079650504579
+Pair 27 : YearRemodAdd<->MasVnrArea -> 0.5138801318895355
+Pair 28 : OverallQual<->KitchenQual -> 0.5136840301835338
+Pair 29 : HouseStyle<->2ndFlrSF -> 0.5064074112476233
+Pair 30 : MasVnrArea<->KitchenQual -> 0.504291077290128
+Pair 31 : MasVnrArea<->GarageArea -> 0.5035180010884966
+Pair 32 : YearBuilt<->MasVnrArea -> 0.5030359117453747
+Pair 33 : Neighborhood<->ExterQual -> 0.5014215819300109
+Pair 34 : MasVnrArea<->TotalBsmtSF -> 0.4974132191950798
+Pair 35 : MasVnrArea<->2ndFlrSF -> 0.4953011638342419
+Pair 36 : MasVnrArea<->GrLivArea -> 0.49446806666924403
+Pair 37 : MasVnrArea<->1stFlrSF -> 0.4935873691947195
+Pair 38 : 1stFlrSF<->GarageArea -> 0.4897816541041916
+Pair 39 : YearBuilt<->Foundation -> 0.4879463846818753
+Pair 40 : LotArea<->MasVnrArea -> 0.4873888898066894
+Pair 41 : TotalBsmtSF<->GarageArea -> 0.48666546377379594
+Pair 42 : Neighborhood<->MasVnrArea -> 0.48437970304092026
+Pair 43 : YearBuilt<->BsmtQual -> 0.48285881210980397
+Pair 44 : Neighborhood<->BsmtQual -> 0.4823037119698961
+Pair 45 : MasVnrArea<->GarageFinish -> 0.48037127807360075
+Pair 46 : YearBuilt<->GarageArea -> 0.4789538198934907
+Pair 47 : Neighborhood<->OverallQual -> 0.47829995191205443
+Pair 48 : YearBuilt<->ExterQual -> 0.47792024313311865
+Pair 49 : MSSubClass<->MasVnrArea -> 0.47754168775198563
+Pair 50 : OverallQual<->1stFlrSF -> 0.47622382907817795
+Pair 51 : MSSubClass<->Neighborhood -> 0.4732884226727056
+Pair 52 : MasVnrArea<->BsmtQual -> 0.4699312723235607
+Pair 53 : GrLivArea<->GarageArea -> 0.46899747732296465
+Pair 54 : YearBuilt<->FullBath -> 0.46827078717267334
+Pair 55 : ExterQual<->BsmtQual -> 0.4668304518398034
+Pair 56 : GarageFinish<->GarageArea -> 0.465860387770405
+Pair 57 : Neighborhood<->FullBath -> 0.4637382127344876
+Pair 58 : Neighborhood<->KitchenQual -> 0.4620218165552828
+Pair 59 : Foundation<->BsmtFinType1 -> 0.45819988975355347
+Pair 60 : TotalBsmtSF<->GrLivArea -> 0.4548682025479029
+Pair 61 : MasVnrArea<->BsmtFinType1 -> 0.4438681629878053
+Pair 62 : OverallQual<->BsmtQual -> 0.44365921378120776
+Pair 63 : MasVnrArea<->GarageType -> 0.4428068345983021
+Pair 64 : YearRemodAdd<->FullBath -> 0.4390464838723491
+Pair 65 : YearBuilt<->KitchenQual -> 0.43683881196214613
+Pair 66 : Neighborhood<->Foundation -> 0.43584823985069426
+Pair 67 : Neighborhood<->GarageFinish -> 0.4358248705364857
+Pair 68 : YearRemodAdd<->KitchenQual -> 0.43198706312813373
+Pair 69 : OverallQual<->TotRmsAbvGrd -> 0.427452343277986
+Pair 70 : BsmtQual<->KitchenQual -> 0.4252195229861999
+Pair 71 : 2ndFlrSF<->FullBath -> 0.4213779828759689
+Pair 72 : BsmtQual<->FullBath -> 0.41871019076235705
+Pair 73 : 1stFlrSF<->TotRmsAbvGrd -> 0.4095159788668289
+Pair 74 : YearRemodAdd<->ExterQual -> 0.40907989314334575
+Pair 75 : FullBath<->GarageArea -> 0.40565620845400907
+Pair 76 : YearBuilt<->GarageFinish -> 0.3966482687378979
+Pair 77 : YearBuilt<->TotalBsmtSF -> 0.39145200206609515
+Pair 78 : ExterQual<->FullBath -> 0.3875435639002167
+Pair 79 : Neighborhood<->YearRemodAdd -> 0.3875278538436929
+Pair 80 : 1stFlrSF<->FullBath -> 0.38063749497350785
+Pair 81 : ExterQual<->Foundation -> 0.37534287906828573
+Pair 82 : BsmtQual<->TotalBsmtSF -> 0.3746587815376638
+Pair 83 : HouseStyle<->MasVnrArea -> 0.37196289308967595
+Pair 84 : YearRemodAdd<->GarageArea -> 0.37159980949730886
+Pair 85 : Exterior1st<->ExterQual -> 0.36370689705023496
+Pair 86 : Neighborhood<->2ndFlrSF -> 0.3585865309037671
+Pair 87 : Foundation<->FullBath -> 0.3554462792583987
+Pair 88 : OverallQual<->GarageFinish -> 0.35509288529485433
+Pair 89 : Neighborhood<->MasVnrType -> 0.3538804499585642
+Pair 90 : YearBuilt<->Exterior1st -> 0.35373318636162543
+Pair 91 : YearBuilt<->MasVnrType -> 0.34863567476788887
+Pair 92 : YearRemodAdd<->BsmtQual -> 0.34785589405263284
+Pair 93 : Foundation<->KitchenQual -> 0.3476042029696783
+Pair 94 : Exterior1st<->MasVnrArea -> 0.34519828991970586
+Pair 95 : BsmtQual<->GarageFinish -> 0.34436156796831147
+Pair 96 : KitchenQual<->FullBath -> 0.34285996621833775
+Pair 97 : ExterQual<->GarageFinish -> 0.34159795027752327
+Pair 98 : KitchenQual<->GarageArea -> 0.34035695266698685
+Pair 99 : TotRmsAbvGrd<->GarageArea -> 0.3378221206368345
+Maimal cliques of size: 4
+{OverallQual YearBuilt YearRemodAdd MasVnrArea }
+{OverallQual MasVnrArea ExterQual KitchenQual }
+Maimal cliques of size: 3
+{OverallQual MasVnrArea FullBath }
+{OverallQual MasVnrArea GarageArea }
+{OverallQual GrLivArea FullBath }
+{MasVnrArea FullBath TotRmsAbvGrd }
+{2ndFlrSF GrLivArea TotRmsAbvGrd }
+{GrLivArea FullBath TotRmsAbvGrd }
+Maimal cliques of size: 2
+{MSSubClass HouseStyle }
+{Neighborhood YearBuilt }
+{Neighborhood ExterQual }
+{HouseStyle 2ndFlrSF }
+{OverallQual TotalBsmtSF }
+{MasVnrType MasVnrArea }
+{MasVnrArea Fireplaces }
+{Foundation BsmtQual }
+{BsmtQual BsmtFinType1 }
+{TotalBsmtSF 1stFlrSF }
+{1stFlrSF GrLivArea }
+{GarageType GarageFinish }
+Maimal cliques of size: 1
+{LotArea }
+{Exterior1st }

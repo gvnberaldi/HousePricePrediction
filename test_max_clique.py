@@ -1,8 +1,6 @@
 #! /usr/bin/python3
 
 
-
-
 def decide_clique(graph: list[list[int]] , set_nodes : list[int] ):
 
     for i in set_nodes:
@@ -51,8 +49,7 @@ def function_maximal_cliques(graph: list[list], n: int) -> list[list[int]]:
                 maximal_clique[j] = maximal_clique[j-1] + 1
             i = n - 1 
         else:
-            i -= 1
-            
+            i -= 1   
         
     return res
         
@@ -77,7 +74,7 @@ graph = [ [ 0 for _ in range(7) ] for _ in range(7)  ]
 
 graph[0][1] = 1
 graph[0][2] = 1
-# graph[0][3] = 1
+graph[0][3] = 1
 graph[1][2] = 1
 graph[1][3] = 1
 graph[1][6] = 1
