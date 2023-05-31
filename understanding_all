@@ -73,7 +73,7 @@ Aggiunte due funzioni e modificato histplot
     - to int
 37- BsmtUnfSF: borderline cestinare
     - to int
-38- TotalBsmtFs: teniamolo così com'è
+38- TotalBsmtSF: teniamolo così com'è
     - to int
 39- Heating: cestiniamolo, tutti gli stessi
     - to category
