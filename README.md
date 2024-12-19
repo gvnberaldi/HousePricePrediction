@@ -36,7 +36,7 @@ Refer to the **Data Understanding** section in the [report](docs/report.pdf) for
    - Features were normalized using `StandardScaler`.
    - Aggregated attributes like **TotalSF**, combining square footage across different property areas.
 
-For more details, see the **Data Preparation** section in the [report](report.pdf).
+For more details, see the **Data Preparation** section in the [report](docs/report.pdf).
 
 ## Implemented Models
 
@@ -68,7 +68,7 @@ The models demonstrate strong performance, particularly for the high-price class
 
 ![ROC Curve](docs/images/roc_curves.jpg)
 
-Refer to the **Modelling and Validation** section in the [report](report.pdf) for more details on model evaluation, tuning and performance.
+Refer to the **Modelling and Validation** section in the [report](docs/report.pdf) for more details on model evaluation, tuning and performance.
 
 ---
 
@@ -81,4 +81,4 @@ The Random Forest model demonstrated superior performance in terms of:
 
 Gradient Boosting offered comparable quality but excelled in speed for predictions. Both models benefited from resampling techniques to balance the imbalanced dataset.
 
-For additional analysis, refer to the **Evaluation** section in the [report](report.pdf).
+For additional analysis, refer to the **Evaluation** section in the [report](docs/report.pdf).
