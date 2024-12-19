@@ -1,6 +1,5 @@
 #! /usr/bin/python3
 
-
 def decide_clique(graph: list[list[int]] , set_nodes : list[int] ):
 
     for i in set_nodes:
