@@ -61,12 +61,12 @@ We tested various machine learning models, including:
 - **Random Forest**: Robust identification of high-value properties.
 - **Gradient Boosting**: Precise classification for low-value properties.
 
-![Confusion Matrix](docs/images/confusion_matrix.png)
+![Confusion Matrix](docs/images/confusion_matrix.jpg)
 
 **ROC Curves for Best Models:**  
 The models demonstrate strong performance, particularly for the high-price class due to resampling.
 
-![ROC Curve](docs/images/roc_curves.png)
+![ROC Curve](docs/images/roc_curves.jpg)
 
 Refer to the **Modelling and Validation** section in the [report](report.pdf) for more details on model evaluation, tuning and performance.
 
