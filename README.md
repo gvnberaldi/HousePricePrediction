@@ -53,9 +53,9 @@ We tested various machine learning models, including:
 
 | Model             | Accuracy (avg) | Precision (avg) | Recall (avg) | F1-Score (avg) |
 |--------------------|----------|-----------|--------|----------|
-| Decision Tree      | 0.79     | 0.77      | 0.76   | 0.75     |
-| **Random Forest**  | **0.85** | **0.84**  | **0.82**   | **0.82**  |
-| Gradient Boosting  | 0.85     | 0.83      | 0.82| 0.82    |
+| Decision Tree      | 0.78     | 0.76      | 0.74   | 0.75     |
+| **Random Forest**  | **0.90** | **0.90**  | **0.90**   | **0.89**  |
+| Gradient Boosting  | 0.90    | 0.88      | 0.90 | 0.82    |
 
 **Confusion Matrices:**
 - **Random Forest**: Robust identification of high-value properties.
@@ -75,7 +75,7 @@ Refer to the **Modelling and Validation** section in the [report](docs/report.pd
 ## Results and Evaluation
 
 The Random Forest model demonstrated superior performance in terms of:
-- Accuracy: 85%
+- Accuracy: 90%
 - Balanced classification across price ranges.
 - Practical prediction times suitable for real-world application.
 
